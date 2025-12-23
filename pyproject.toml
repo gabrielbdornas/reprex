@@ -1,0 +1,34 @@
+[project]
+name = "reprex"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel Dornas",email = "gabrielbdornas@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "taskipy (>=1.14.1,<2.0.0)",
+    "ghi-cli (>=0.4.0,<0.5.0)",
+    "frictionless (>=5.18.1,<6.0.0)"
+]
+
+
+[tool.poetry]
+package-mode=false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipdb (>=0.13.13,<0.14.0)",
+    "pytest (>=9.0.2,<10.0.0)"
+]
+
+
+[tool.taskipy.tasks]
+list = { cmd = "task --list", help = "List all tasks." }
+test = { cmd = "pytest", help = "Runs all unit tests." }
+orphan-branch = { cmd = "ghi git n", help = "Creates a new orphan branch. Must inform the new branch name." }

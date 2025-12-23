@@ -1,0 +1,24 @@
+{
+  "name": "path-list-example",
+  "resources": [
+    {
+      "name": "example-resource",
+      "path": [
+        "data/example1.csv",
+        "data/example2.csv"
+      ],
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
