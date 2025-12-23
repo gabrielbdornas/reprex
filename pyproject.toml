@@ -1,5 +1,5 @@
 [project]
-name = "repo-template-python"
+name = "repo-template-reprex"
 version = "0.1.0"
 description = ""
 authors = [
@@ -8,7 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13,<4.0"
 dependencies = [
-    "taskipy (>=1.14.1,<2.0.0)"
+    "taskipy (>=1.14.1,<2.0.0)",
+    "ghi-cli (>=0.4.0,<0.5.0)"
 ]
 
 
@@ -29,4 +30,4 @@ dev = [
 [tool.taskipy.tasks]
 list = { cmd = "task --list", help = "List all tasks." }
 test = { cmd = "pytest", help = "Runs all unit tests." }
-orphan-branch = { cmd = "ghi n", help = "Creates a new orphan branch. Must inform the new branch name." }
+orphan-branch = { cmd = "ghi git n", help = "Creates a new orphan branch. Must inform the new branch name." }
