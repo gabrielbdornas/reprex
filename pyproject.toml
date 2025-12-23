@@ -29,3 +29,4 @@ dev = [
 [tool.taskipy.tasks]
 list = { cmd = "task --list", help = "List all tasks." }
 test = { cmd = "pytest", help = "Runs all unit tests." }
+orphan-branch = { cmd = "ghi n", help = "Creates a new orphan branch. Must inform the new branch name." }
