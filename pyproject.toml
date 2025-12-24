@@ -1,0 +1,23 @@
+[project]
+name = "reprex"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel Dornas",email = "gabrielbdornas@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipdb (>=0.13.13,<0.14.0)"
+]
