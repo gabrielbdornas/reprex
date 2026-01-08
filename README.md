@@ -2,7 +2,9 @@
 
 Some finds about pluggy API.
 
+- [Video de referência](https://www.youtube.com/watch?v=R6FF7MGERs0).
 - The `pluggy.authentication.create_api_key` function needs pluggy app `client_id` and `client_secret`.
+- An API key works as an API secret and expires 2 hours after creation (We could put this information at the created key to avoid call this endpoint unnecessarily).
 - When you create plyggy account you get access to its panel. To create an app just go to the `Aplications` tab and select `New`.
 - Selecting `Preview in Demo` you're going to be redirect to a new panel, where it is possible to connect bank accounts.
 - All accont connected creates a new `item_id`.
