@@ -10,7 +10,7 @@ else:
     print("The resource is invalid using datapackage.json as descriptor")
 
 # 2º cenario - Create resource with multiple data files and extrapaths parameter
-path_resource = Resource('data/example1.csv', extrapaths=['data/example2.csv'])
+path_resource = Resource('data/example1.csv', extrapaths=['data/example2.csv', 'data/example3.csv'])
 path_validation = path_resource.validate()
 
 if path_validation.valid:
@@ -19,7 +19,7 @@ else:
     print("The resource is invalid using multiple data files with extrapaths parameter")
 
 # 3º cenario - Create resource with multiple data files and a datapackage.json file
-resource = Resource(name="example", extrapaths=["data/example1.csv", "data/example2.csv"])
+resource = Resource(name="example", extrapaths=["data/example1.csv", "data/example2.csv", 'data/example3.csv'])
 resource_validate = resource.validate()
 
 if resource_validate.valid:
