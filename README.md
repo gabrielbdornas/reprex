@@ -1,4 +1,3 @@
-
 # Reproducible Example – `Resource.path` as `list[str]`
 
 This repository is a **minimal reproducible example (reprex)** created to illustrate the **Frictionless specification**, which allows [`Resource.path` to be a `list[str]`](https://datapackage.org/standard/data-resource/#multiple-files) for multi-file resources and that the **Python API ([`frictionless-py`](https://pypi.org/project/frictionless/))**, validates `datapackage.json`.
@@ -15,6 +14,7 @@ This reprex has a simple structure:
 ├── data
 │   ├── example1.csv
 │   └── example2.csv
+│   └── example3.csv
 └── README.md
 ```
 
@@ -58,7 +58,7 @@ source venv/bin/activate
 pip install frictionless==5.18.1
 ```
 
-## Validation test (works as expected)
+## Validation test CLI (works as expected)
 
 From the project root, run:
 
@@ -73,6 +73,17 @@ frictionless validate datapackage.json
 
 Expected result:
 
-* Validation succeeds.
-* The resource loads both CSV files listed in `path`.
-* Confirms that `path` as `list[str]` works when defined in a Datapackage resource.
+-   Validation succeeds.
+-   The resource loads both CSV files listed in `path`.
+-   Confirms that `path` as `list[str]` works when defined in a Datapackage resource.
+
+## Validation test API
+
+```bash
+# Using Poetry
+poetry run python scripts/validate.py
+
+# Using pip
+# need virtual env active
+python scripts/validate.py
+```
