@@ -30,7 +30,7 @@ This reprex has a simple structure[^1]:
 Clone the branch used for this reproducible example:
 
 ```bash
-git clone --branch frictionless-fieldsMatch-test --single-branch git@github.com:gabrielbdornas/reprex.git
+git clone --branch 20260122_frictionless-fieldsMatch-test --single-branch git@github.com:gabrielbdornas/reprex.git
 cd reprex
 
 # Python Setup
