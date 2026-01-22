@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "integer"
+    },
+    {
+      "name": "FLAG_PART_2",
+      "type": "boolean",
+      "trueValues": ["Yes"],
+      "falseValues": ["No"]
+    },
+    {
+      "name": "FLAG_TYPE_A",
+      "type": "boolean",
+      "trueValues": ["Yes"],
+      "falseValues": ["No"]
+    },
+    {
+      "name": "FLAG_TYPE_B",
+      "type": "boolean",
+      "trueValues": ["Yes"],
+      "falseValues": ["No"]
+    }
+  ],
+  "fieldsMatch": "partial",
+  "primaryKey": ["id"]
+}
