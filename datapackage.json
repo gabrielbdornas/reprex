@@ -1,4 +1,6 @@
 {
+  "name": "reprex",
+  "title" : "A nice reprex to test 'fieldsMatch' schema property",
   "resources": [
     {
       "name": "data_1_field",
@@ -8,7 +10,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schemas/schema.json"
+      "schema": "schemas/schema.json",
+      "dialect": "schemas/dialect.json"
     },
     {
       "name": "data_2_fields",
@@ -18,7 +21,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schemas/schema.json"
+      "schema": "schemas/schema.json",
+      "dialect": "schemas/dialect.json"
     },
     {
       "name": "data_full",
@@ -28,7 +32,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schemas/schema.json"
+      "schema": "schemas/schema.json",
+      "dialect": "schemas/dialect.json"
     },
     {
       "name": "data_without_fields",
@@ -38,7 +43,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "schema": "schemas/schema.json"
+      "schema": "schemas/schema.json",
+      "dialect": "schemas/dialect.json"
     }
   ]
 }
