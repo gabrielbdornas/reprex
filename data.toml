@@ -1,0 +1,9 @@
+title = 'dados-orcamentarios'
+
+[datapackages]
+
+[datapackages.siafi]
+path = 'datapackages/dados_siafi/datapackage.yaml'
+
+[datapackages.sisor]
+path = 'datapackages/dados_sisor/datapackage.yaml'

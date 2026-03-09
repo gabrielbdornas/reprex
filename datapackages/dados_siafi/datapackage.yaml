@@ -1,0 +1,13 @@
+name: dados_siafi
+title: Dados SIAFI
+description: Dados do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI).
+version: 1.0.0
+licenses:
+  - name: CC0-1.0
+    title: Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/)
+sources:
+  - title: SIAFI - Sistema Integrado de Administração Financeira do Governo Federal
+resources:
+    - name: siafi_data
+      title: Dados do SIAFI
+      data: [{ "a": 1, "b": 2 }]

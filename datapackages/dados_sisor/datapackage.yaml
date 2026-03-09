@@ -1,0 +1,13 @@
+name: dados_sisor
+title: Dados SISOR
+description: Dados do Sistema de Informações sobre Orçamentos Públicos em Saúde (SISOR).
+version: 1.0.0
+licenses:
+  - name: CC0-1.0
+    title: Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/)
+sources:
+  - title: SISOR - Sistema de Informações sobre Orçamentos Públicos em Saúde
+resources:
+    - name: sisor_data
+      title: Dados do SISOR
+      data: [{ "a": 1, "b": 2 }]
