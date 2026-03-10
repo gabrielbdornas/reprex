@@ -4,3 +4,4 @@ plugins:
     - search
     - encryptcontent:
         global_password: '123456'
+        search_index: clear
