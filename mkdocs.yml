@@ -1,0 +1,6 @@
+site_name: My Docs
+
+plugins:
+    - search
+    - encryptcontent:
+        global_password: '123456'
