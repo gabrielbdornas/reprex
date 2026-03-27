@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<references>
+  <reference_0>
+    <dc_creator>MAYERNIK, Matthew S.</dc_creator>
+    <dc_title>Metadata</dc_title>
+    <dc_source>Knowledge Organization, v. 47, n. 8, p. 696-713</dc_source>
+    <dc_date>2020</dc_date>
+    <dc_identifier>https://www.isko.org/cyclo/metadata</dc_identifier>
+    <dc_description>Acesso em: 05 jul. 2021</dc_description>
+  </reference_0>
+  <reference_1>
+    <dc_creator>BACA, Murtha</dc_creator>
+    <dc_title>Introduction to Metadata</dc_title>
+    <dc_publisher>Getty Publications</dc_publisher>
+    <dc_date>2016</dc_date>
+    <dc_source>3. ed., Los Angeles</dc_source>
+    <dc_identifier>http://www.getty.edu/publications/intrometadata</dc_identifier>
+    <dc_description>Acesso em: 09 nov. 2020</dc_description>
+  </reference_1>
+  <reference_2>
+    <dc_creator>BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos</dc_creator>
+    <dc_title>Vocabulário Padrão DCAT-BR</dc_title>
+    <dc_publisher>BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos</dc_publisher>
+    <dc_date>[s.d.]</dc_date>
+    <dc_identifier>https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/catalogo-nacional-de-dados/materiais-de-apoio/vocabulario-padrao-dcat-br-v1.0/@@download/file</dc_identifier>
+    <dc_description>Acesso em: 20 nov. 2025</dc_description>
+  </reference_2>
+  <reference_3>
+    <dc_creator>ASOK, Kavya; SNIGDHA, Sushree Dandpat; GUPTA, Dinesh K.; SHRIVASTAVA, Prashant</dc_creator>
+    <dc_title>Common Metadata Framework for Research Data Repository: Necessity to Support Open Science</dc_title>
+    <dc_source>Journal of Library Metadata, v. 21</dc_source>
+    <dc_date>2024-03</dc_date>
+    <dc_identifier>https://doi.org/10.1080/19386389.2024.2329370</dc_identifier>
+    <dc_description>Acesso em: 14 dez. 2025</dc_description>
+  </reference_3>
+  <reference_4>
+    <dc_creator>ZENG, Marcia Lei</dc_creator>
+    <dc_title>Semantic enrichment for enhancing LAM data and supporting digital humanities</dc_title>
+    <dc_source>El profesional de la información, v. 28, n. 1</dc_source>
+    <dc_date>2019</dc_date>
+    <dc_identifier>https://doi.org/10.3145/epi.2019.ene.03</dc_identifier>
+    <dc_description>Acesso em: 20 set. 2022</dc_description>
+  </reference_4>
+  <reference_5>
+    <dc_creator>CHAN, Lois Mai; ZENG, Marcia Lei</dc_creator>
+    <dc_title>Metadata interoperability and standardization–a study of methodology part I</dc_title>
+    <dc_source>D-Lib Magazine, v. 12, n. 6, p. 1082-9873</dc_source>
+    <dc_date>2006</dc_date>
+    <dc_identifier>https://webdoc.sub.gwdg.de/edoc/aw/d-lib/dlib/june06/chan/06chan.html</dc_identifier>
+    <dc_description>Acesso em: 06 ago. 2021</dc_description>
+  </reference_5>
+</references>
