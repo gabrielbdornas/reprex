@@ -34,6 +34,6 @@ if __name__ == "__main__":
 
     for bill in os.listdir('pdfs'):
         # breakpoint()
-        pwd = cemig_pwd if bill == 'cemig.pdf' else None
+        pwd = cemig_pwd if bill == 'energia.pdf' else None
         code = barcode_reader(f'pdfs/{bill}', password=pwd)
         print(f'{bill}: {code}')
