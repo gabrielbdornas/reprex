@@ -1,0 +1,19 @@
+[project]
+name = "reprex"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel Dornas",email = "gabrielbdornas@gmail.com"}
+]
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "markitdown[all] @ file:///home/gabrielbdornas/code/gabrielbdornas/reprex/markitdown/packages/markitdown"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+markitdown = {develop = true}
