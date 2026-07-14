@@ -1,0 +1,1074 @@
+{
+  "name": "dados-armazem-siafi-2026",
+  "title": "Sistema Integrado de Administração Financeira – SIAFI 2026",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "cota",
+      "type": "table",
+      "title": "cota",
+      "profile": "tabular-data-resource",
+      "path": "data/cota.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:add3225b9ac6324459db80cd461b4207f564f9719e8febd4bbc51e2ce89ef537",
+      "bytes": 341848,
+      "fields": 19,
+      "rows": 23321,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "poder_cod",
+            "type": "integer",
+            "source": "Poder Unid Orçamentária - Código"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "ue_cod",
+            "type": "integer",
+            "source": "Unidade Executora - Código"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer",
+            "source": "Elemento_Item Despesa - Código"
+          },
+          {
+            "name": "data_registro_cota",
+            "type": "string",
+            "source": "Data Registro Doc CotaAprov"
+          },
+          {
+            "name": "operador_registro",
+            "type": "string",
+            "source": "Operador - Registro"
+          },
+          {
+            "name": "operador_cancelamento",
+            "type": "string",
+            "source": "Operador - Cancelamento"
+          },
+          {
+            "name": "documento_aprovacao_cota",
+            "type": "number",
+            "source": "Documento Aprovação Cota"
+          },
+          {
+            "name": "vlr_cota_aprovada",
+            "type": "number",
+            "source": "Valor Cota Aprovada",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_cota_cancelada",
+            "type": "number",
+            "source": "Valor Cota Cancelada",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_cota_anulada",
+            "type": "number",
+            "source": "Valor Anulação Cota Aprovada",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_cota_aprovada_liquida",
+            "type": "number",
+            "source": "Valor Cota Aprovada Líquida",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "execucao",
+      "type": "table",
+      "title": "execucao",
+      "profile": "tabular-data-resource",
+      "path": "data/execucao.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:ca81d1352982c250b0cc9fa83ed459b71cb09407eaeb6051b5b97536e86bc42f",
+      "bytes": 14942390,
+      "fields": 30,
+      "rows": 612688,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "ue_cod",
+            "type": "integer",
+            "source": "Unidade Executora - Código"
+          },
+          {
+            "name": "upg_cod",
+            "type": "integer",
+            "source": "Unid Programação Gasto - Código"
+          },
+          {
+            "name": "uo_fin_cod",
+            "type": "integer",
+            "source": "Unid Orçam Financiadora Gasto - Cod"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Função - Código"
+          },
+          {
+            "name": "subfuncao_cod",
+            "type": "integer",
+            "source": "Subfunção - Código"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Programa - Código"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer",
+            "source": "Elemento Item Despesa - Código"
+          },
+          {
+            "name": "elemento_dea_cod",
+            "type": "integer",
+            "source": "Elemento origem DEA"
+          },
+          {
+            "name": "item_dea_cod",
+            "type": "integer",
+            "source": "Item origem DEA"
+          },
+          {
+            "name": "num_processo_compra",
+            "type": "string",
+            "source": "Número Processo Compra SIAD"
+          },
+          {
+            "name": "licitacao_modalidade",
+            "type": "string",
+            "source": "Licitação - Descrição da Modalidade"
+          },
+          {
+            "name": "cnpj_cpf_formatado",
+            "type": "string",
+            "source": "CNPJ_CPF Credor - Formatado"
+          },
+          {
+            "name": "num_contrato_saida",
+            "type": "integer",
+            "source": "ContratoConvênio Saída"
+          },
+          {
+            "name": "num_contrato_entrada",
+            "type": "integer",
+            "source": "ContratoConvênio Entrada"
+          },
+          {
+            "name": "num_obra",
+            "type": "integer",
+            "source": "Número Obra"
+          },
+          {
+            "name": "num_empenho",
+            "type": "integer",
+            "source": "Número Empenho"
+          },
+          {
+            "name": "vlr_empenhado",
+            "type": "number",
+            "source": "Valor Despesa Empenhada",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_liquidado",
+            "type": "number",
+            "source": "Valor Despesa Liquidada",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_liquidado_retido",
+            "type": "number",
+            "source": "Valor Liquidado Retido",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_pago_orcamentario",
+            "type": "number",
+            "source": "Valor Pago Orçamentário",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_pago_financeiro",
+            "type": "number",
+            "source": "Valor Pago Financeiro",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "credito",
+      "type": "table",
+      "title": "credito",
+      "profile": "tabular-data-resource",
+      "path": "data/credito.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:7a6076bcbe6c19a966a44c692e57dc790d8cd0db7774bd636248b9cf3cb48061",
+      "bytes": 48822,
+      "fields": 14,
+      "rows": 3130,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Função - Código"
+          },
+          {
+            "name": "subfuncao_cod",
+            "type": "integer",
+            "source": "Subfunção - Código"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Programa - Código"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "vlr_credito_inicial",
+            "type": "number",
+            "source": "Valor Crédito Inicial",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_credito_autorizado",
+            "type": "number",
+            "source": "Valor Crédito Autorizado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_cota_descentralizada",
+            "type": "number",
+            "source": "Valor Cota Descentralizada",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "receita",
+      "type": "table",
+      "title": "receita",
+      "profile": "tabular-data-resource",
+      "path": "data/receita.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:7be4a68166e4a31de089ed25b3da69a91656eb194ecd1ca1ffc8bc7978180a9b",
+      "bytes": 87174,
+      "fields": 11,
+      "rows": 5572,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "receita_cod",
+            "type": "integer",
+            "source": "Classificação Receita - Código"
+          },
+          {
+            "name": "receita_cod_formatado",
+            "type": "string",
+            "source": "Classificação Receita - Formatado"
+          },
+          {
+            "name": "vlr_previsto_inicial",
+            "type": "number",
+            "source": "Valor Previsto Inicial",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_previsto_adicional",
+            "type": "number",
+            "source": "Valor Previsto Adicional",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_previsto_atualizado",
+            "type": "number",
+            "source": "Valor Previsto Atualizado",
+            "fact_table": true,
+            "fact_table": true
+          },
+          {
+            "name": "vlr_contabilizado",
+            "type": "number",
+            "source": "Valor Contabilizado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_efetivado_ajustado",
+            "type": "number",
+            "source": "Valor Efetivado Ajustado",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "alteracoes_orcamentarias",
+      "type": "table",
+      "title": "alteracoes_orcamentarias",
+      "profile": "tabular-data-resource",
+      "path": "data/alteracoes_orcamentarias.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:99dd4a2c5a6c11ad62af1ef8fa32ab0434de039ae66168621cfd737fe9353ae9",
+      "bytes": 87793,
+      "fields": 22,
+      "rows": 5525,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "data_publicacao",
+            "type": "datetime",
+            "source": "Publicação Decreto Alteração Orçam"
+          },
+          {
+            "name": "data_registro",
+            "type": "datetime",
+            "source": "Data Registro Doc AlterOrçam"
+          },
+          {
+            "name": "decreto_num",
+            "type": "integer",
+            "source": "Decreto Alteração Orçamentária"
+          },
+          {
+            "name": "lei_aprovacao",
+            "type": "integer",
+            "source": "Lei Aprovação Orçamento"
+          },
+          {
+            "name": "poder_cod",
+            "type": "integer",
+            "source": "Poder Unid Orçamentária - Código"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Função - Código"
+          },
+          {
+            "name": "programa_cod",
+            "type": "integer",
+            "source": "Programa - Código"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "origem_credito_cod",
+            "type": "integer",
+            "source": "Crédito Adicional - Código"
+          },
+          {
+            "name": "origem_credito_desc",
+            "type": "string",
+            "source": "Crédito Adicional - Descrição"
+          },
+          {
+            "name": "vlr_suplementacao",
+            "type": "number",
+            "source": "Valor Suplementação",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_anulacao",
+            "type": "number",
+            "source": "Valor Anulação Crédito",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_credito_inicial",
+            "type": "number",
+            "source": "Valor Crédito Inicial",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_credito_autorizado",
+            "type": "number",
+            "source": "Valor Crédito Autorizado",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "restos_pagar",
+      "type": "table",
+      "title": "restos_pagar",
+      "profile": "tabular-data-resource",
+      "path": "data/restos_pagar.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:636e60b1c3dee6a9656683648b679a6bae7819647b6ca70b59ff8a23db8f3ecd",
+      "bytes": 7019607,
+      "fields": 45,
+      "rows": 205412,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "ano_rp",
+            "type": "integer",
+            "source": "Ano Origem Restos a Pagar"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "ue_cod",
+            "type": "integer",
+            "source": "Unidade Executora - Código"
+          },
+          {
+            "name": "uo_fin_cod",
+            "type": "integer",
+            "source": "Unid Orçam Financiadora Gasto - Cod"
+          },
+          {
+            "name": "upg_cod",
+            "type": "integer",
+            "source": "Unid Programação Gasto - Código"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Função - Código"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "elemento_cod",
+            "type": "integer",
+            "source": "Elemento Despesa - Código"
+          },
+          {
+            "name": "item_cod",
+            "type": "integer",
+            "source": "Item Despesa - Código"
+          },
+          {
+            "name": "elemento_dea_cod",
+            "type": "integer",
+            "source": "Elemento origem DEA"
+          },
+          {
+            "name": "item_dea_cod",
+            "type": "integer",
+            "source": "Item origem DEA"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer",
+            "source": "Elemento Item Despesa - Código"
+          },
+          {
+            "name": "num_empenho",
+            "type": "integer",
+            "source": "Número Empenho"
+          },
+          {
+            "name": "cnpj_cpf_formatado",
+            "type": "string",
+            "source": "CNPJ_CPF Credor - Formatado"
+          },
+          {
+            "name": "razao_social_credor",
+            "type": "string",
+            "source": "Razão Social Credor"
+          },
+          {
+            "name": "num_contrato_entrada",
+            "type": "integer",
+            "source": "ContratoConvênio Entrada"
+          },
+          {
+            "name": "num_contrato_saida",
+            "type": "integer",
+            "source": "ContratoConvênio Saída"
+          },
+          {
+            "name": "num_obra",
+            "type": "integer",
+            "source": "Número Obra"
+          },
+          {
+            "name": "num_processo_compra",
+            "type": "string",
+            "source": "Número Processo Compra SIAD"
+          },
+          {
+            "name": "vlr_inscrito_rpnp",
+            "type": "number",
+            "source": "Valor Inscrito Não Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_cancelado_rpnp",
+            "type": "number",
+            "source": "Valor Cancelado Não Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_restabelecido_rpnp",
+            "type": "number",
+            "source": "Valor Restabelecido Não Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_despesa_liquidada_rpnp",
+            "type": "number",
+            "source": "Valor Despesa Liquidada",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_despesa_liquidada_pagar",
+            "type": "number",
+            "source": "Valor Despesa Liquidada a Pagar",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_saldo_rpp",
+            "type": "number",
+            "source": "Saldo Restos a Pagar Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_saldo_rpnp",
+            "type": "number",
+            "source": "Saldo Restos a Pagar Não Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_inscrito_rpp",
+            "type": "number",
+            "source": "Valor Inscrito Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_cancelado_rpp",
+            "type": "number",
+            "source": "Valor Cancelado Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_desconto_rpp",
+            "type": "number",
+            "source": "Valor Desconto Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_restabelecido_rpp",
+            "type": "number",
+            "source": "Valor Restabelecido Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_pago_rpp",
+            "type": "number",
+            "source": "Valor Pago Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_anulacao_pagamento_rpp",
+            "type": "number",
+            "source": "Valor Anulação Pagamento Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_retencao_rpp",
+            "type": "number",
+            "source": "Valor Retenção Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_anulacao_retencao_rpp",
+            "type": "number",
+            "source": "Valor Anulação Retenção Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_anulacao_pago_antecipado",
+            "type": "number",
+            "source": "Valor Anulação Pago Antecipado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_pago_antecipado_exercicio",
+            "type": "number",
+            "source": "Valor Pago Antecipado Exercício",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_pago_rpnp",
+            "type": "number",
+            "source": "Valor Pago Não Processado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_retencao_rpnp",
+            "type": "number",
+            "source": "Valor Retenção Não Processado",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "restos_pagar_folha",
+      "type": "table",
+      "title": "restos_pagar_folha",
+      "profile": "tabular-data-resource",
+      "path": "data/restos_pagar_folha.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:006a68716ab7981053367c5360bb3cab8f082fbdd7d7092e59f217ce4f66218f",
+      "bytes": 7495,
+      "fields": 13,
+      "rows": 726,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "ano_rp_folha",
+            "type": "integer",
+            "source": "Ano Origem Folha Pagamento"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "vlr_inscrito_folha",
+            "type": "number",
+            "source": "Valor Inscrito Folha",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_anulado_folha",
+            "type": "number",
+            "source": "Valor Anulado Folha",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_pago_folha",
+            "type": "number",
+            "source": "Valor Pago Folha",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_despesa_liquidada_pagar_folha",
+            "type": "number",
+            "source": "Valor Despesa Liquidada a Pagar - Folha",
+            "fact_table": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "execucao_alem_credito",
+      "type": "table",
+      "title": "execucao_alem_credito",
+      "profile": "tabular-data-resource",
+      "path": "data/execucao_alem_credito.csv.gz",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "compression": "gz",
+      "encoding": "utf-8",
+      "hash": "sha256:07c60f5a98d9eceff330468fe9cbd1962fa59859d27be36823b734b113d40ae1",
+      "bytes": 1391,
+      "fields": 16,
+      "rows": 109,
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "integer",
+            "source": "Ano de Exercício"
+          },
+          {
+            "name": "mes_cod",
+            "type": "integer",
+            "source": "Mês - Numérico"
+          },
+          {
+            "name": "mes_regularizacao",
+            "type": "integer",
+            "source": "Mês Regularização"
+          },
+          {
+            "name": "mes_registro",
+            "type": "integer",
+            "source": "Mês Registro Doc DespPend"
+          },
+          {
+            "name": "uo_cod",
+            "type": "integer",
+            "source": "Unidade Orçamentária - Código"
+          },
+          {
+            "name": "funcao_cod",
+            "type": "integer",
+            "source": "Função - Código"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer",
+            "source": "Projeto_Atividade - Código"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer",
+            "source": "Grupo Despesa - Código"
+          },
+          {
+            "name": "modalidade_cod",
+            "type": "integer",
+            "source": "Modalidade Aplicação - Código"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer",
+            "source": "Identificador Orçamento - Código"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer",
+            "source": "Fonte Recurso - Código"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer",
+            "source": "Procedência - Código"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer",
+            "source": "Elemento Item Despesa - Código"
+          },
+          {
+            "name": "vlr_alem_credito",
+            "type": "number",
+            "source": "Valor Além Crédito",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_regularizado",
+            "type": "number",
+            "source": "Valor Regularizado",
+            "fact_table": true
+          },
+          {
+            "name": "vlr_anulado",
+            "type": "number",
+            "source": "Valor Anulado",
+            "fact_table": true
+          }
+        ]
+      }
+    }
+  ],
+  "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
+  "updated_at": "2026-07-14T11:19:57",
+  "remote": {
+    "host": "raw.githubusercontent.com",
+    "user": "splor-mg",
+    "repo": "dados-armazem-siafi-2026",
+    "ref": "main",
+    "sha": "1db6523f79d8abaf415bb61a9d87226bb298f881"
+  }
+}
