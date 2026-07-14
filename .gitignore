@@ -628,6 +628,9 @@ FakesAssemblies/
 .ntvs_analysis.dat
 node_modules/
 
+# Observable Framework
+docs/.observablehq/
+
 # Visual Studio 6 build log
 *.plg
 

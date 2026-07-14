@@ -1,0 +1,14 @@
+{
+  "name": "reprex-dashboard",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build",
+    "deploy": "observable deploy",
+    "clean": "rm -rf .observablehq/cache"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1"
+  }
+}
